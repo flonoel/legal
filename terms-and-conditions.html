@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Chef's Pages</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --background-color: #fafafa;
+            --card-background: #ffffff;
+            --text-color: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #ecf0f1;
+                --accent-color: #e74c3c;
+                --background-color: #1a1a1a;
+                --card-background: #2d2d2d;
+                --text-color: #e0e0e0;
+                --text-secondary: #a0a0a0;
+                --border-color: #404040;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--accent-color), #c0392b);
+            border-radius: 18px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .effective-date {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--card-background);
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        section {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 .icon {
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            margin: 25px 0 12px 0;
+            font-weight: 600;
+        }
+
+        h3:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(192, 57, 43, 0.05));
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(241, 196, 15, 0.15), rgba(243, 156, 18, 0.08));
+            border-left: 4px solid #f39c12;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-info {
+            background-color: var(--background-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .toc {
+            background-color: var(--background-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .toc ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">📖</div>
+            <h1>Chef's Pages</h1>
+            <p class="subtitle">Terms and Conditions</p>
+            <p class="effective-date">Effective Date: February 3, 2026</p>
+        </header>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#acceptance">Acceptance of Terms</a></li>
+                <li><a href="#eligibility">Eligibility</a></li>
+                <li><a href="#description">Description of Service</a></li>
+                <li><a href="#account">User Account and Responsibilities</a></li>
+                <li><a href="#user-content">User-Generated Content</a></li>
+                <li><a href="#sharing">Content Sharing and Community Features</a></li>
+                <li><a href="#intellectual-property">Intellectual Property</a></li>
+                <li><a href="#acceptable-use">Acceptable Use Policy</a></li>
+                <li><a href="#third-party">Third-Party Services</a></li>
+                <li><a href="#app-store">App Store Terms</a></li>
+                <li><a href="#disclaimers">Disclaimers</a></li>
+                <li><a href="#limitation">Limitation of Liability</a></li>
+                <li><a href="#indemnification">Indemnification</a></li>
+                <li><a href="#termination">Termination</a></li>
+                <li><a href="#changes">Changes to Terms</a></li>
+                <li><a href="#governing-law">Governing Law and Disputes</a></li>
+                <li><a href="#severability">Severability</a></li>
+                <li><a href="#contact">Contact Information</a></li>
+            </ol>
+        </div>
+
+        <section id="acceptance">
+            <h2><span class="icon">📜</span> 1. Acceptance of Terms</h2>
+            <p>Welcome to Chef's Pages. These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and Florian Thess, operating as Chef's Pages ("we," "us," or "our").</p>
+            <p>By downloading, installing, accessing, or using the Chef's Pages application ("App"), you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you must not use the App.</p>
+            <div class="highlight-box">
+                <p><strong>Important:</strong> These Terms include important provisions regarding dispute resolution, limitation of liability, and disclaimers. Please read them carefully.</p>
+            </div>
+            <p>Your use of the App is also governed by our <a href="privacy-policy.html">Privacy Policy</a>, which is incorporated into these Terms by reference.</p>
+        </section>
+
+        <section id="eligibility">
+            <h2><span class="icon">🔞</span> 2. Eligibility</h2>
+            <p><strong>You must be at least 18 years of age to use Chef's Pages.</strong></p>
+            <p>Due to the wine cellar, alcohol tracking, and related features included in the App, Chef's Pages is intended exclusively for adult users. By using the App, you represent and warrant that:</p>
+            <ul>
+                <li>You are at least 18 years of age</li>
+                <li>You have the legal capacity to enter into these Terms</li>
+                <li>You are not prohibited from using the App under applicable laws</li>
+                <li>If you access alcohol-related features, you are of legal drinking age in your jurisdiction</li>
+            </ul>
+            <p>We reserve the right to terminate or suspend access to the App for any user who does not meet these eligibility requirements.</p>
+        </section>
+
+        <section id="description">
+            <h2><span class="icon">📱</span> 3. Description of Service</h2>
+            <p>Chef's Pages is a recipe management and meal planning application that provides the following features:</p>
+            <ul>
+                <li><strong>Recipe Management:</strong> Create, store, organize, and manage your personal recipe collection</li>
+                <li><strong>Wine Cellar:</strong> Track your wine collection, including varietals, regions, tasting notes, and cellar locations</li>
+                <li><strong>Collections:</strong> Organize recipes and wines into themed collections</li>
+                <li><strong>Menu Planning:</strong> Plan meals and pair wines with recipes</li>
+                <li><strong>Shopping Lists:</strong> Generate and manage shopping lists based on recipes</li>
+                <li><strong>Cooking Timers:</strong> Set and manage cooking timers with Apple Watch integration</li>
+                <li><strong>Content Sharing:</strong> Share recipes, wines, and collections with other users</li>
+                <li><strong>Discover:</strong> Browse and import content shared by other users</li>
+                <li><strong>On-Device AI:</strong> Voice-to-recipe transcription and wine profile predictions using on-device machine learning</li>
+            </ul>
+            <p>The App is designed to work primarily offline, with data stored locally on your device and optionally synced via iCloud to your other Apple devices.</p>
+        </section>
+
+        <section id="account">
+            <h2><span class="icon">👤</span> 4. User Account and Responsibilities</h2>
+
+            <h3>No Traditional Account Required</h3>
+            <p>Chef's Pages does not require you to create a traditional account with a username and password. Instead:</p>
+            <ul>
+                <li>An anonymous user identifier (UUID) is automatically generated and stored securely on your device</li>
+                <li>You may optionally provide a display name for attribution when sharing content</li>
+                <li>Your Apple ID is used for iCloud sync functionality (if enabled)</li>
+            </ul>
+
+            <h3>Your Responsibilities</h3>
+            <p>You are responsible for:</p>
+            <ul>
+                <li>Maintaining the security of your device and Apple ID</li>
+                <li>All activity that occurs through the App on your device</li>
+                <li>Ensuring your use of the App complies with all applicable laws and regulations</li>
+                <li>The accuracy and legality of any content you create or share</li>
+                <li>Backing up your data (we recommend enabling iCloud sync)</li>
+            </ul>
+        </section>
+
+        <section id="user-content">
+            <h2><span class="icon">✍️</span> 5. User-Generated Content</h2>
+
+            <h3>Your Content</h3>
+            <p>"User Content" refers to all content you create, upload, or store using the App, including but not limited to recipes, wine entries, collections, images, notes, and any other materials.</p>
+
+            <h3>Ownership</h3>
+            <p><strong>You retain full ownership of your User Content.</strong> We do not claim any ownership rights over the recipes, wines, collections, or other content you create.</p>
+
+            <h3>License Grant</h3>
+            <p>By using the App's sharing features, you grant us a limited, non-exclusive, royalty-free, worldwide license to:</p>
+            <ul>
+                <li>Host, store, and transmit your shared content through our sharing service</li>
+                <li>Display your shared content to other users who access it via share links or the Discover feature</li>
+                <li>Format and optimize your content for display across different devices</li>
+            </ul>
+            <p>This license exists solely to enable the sharing functionality and ends when you delete your shared content or request its removal.</p>
+
+            <h3>Content Representations</h3>
+            <p>By creating or sharing User Content, you represent and warrant that:</p>
+            <ul>
+                <li>You own or have the necessary rights to use and share the content</li>
+                <li>Your content does not infringe any third party's intellectual property rights</li>
+                <li>Your content does not violate any applicable laws</li>
+                <li>Your content is accurate to the best of your knowledge (especially for recipes involving food safety)</li>
+            </ul>
+        </section>
+
+        <section id="sharing">
+            <h2><span class="icon">🔗</span> 6. Content Sharing and Community Features</h2>
+
+            <h3>Sharing Service</h3>
+            <p>Chef's Pages includes features that allow you to share content with others:</p>
+            <ul>
+                <li><strong>Direct Sharing:</strong> Generate links to share specific recipes, wines, or collections</li>
+                <li><strong>Discover Feature:</strong> Browse content that other users have made publicly available</li>
+                <li><strong>Export:</strong> Export recipes as CPD files for offline sharing</li>
+            </ul>
+
+            <h3>Public Sharing</h3>
+            <p>When you share content:</p>
+            <ul>
+                <li>Your content may be accessible to anyone with the share link</li>
+                <li>Your display name (if set) may be visible to recipients</li>
+                <li>Your content may appear in the Discover feature's featured, recent, or popular sections</li>
+            </ul>
+
+            <h3>No Guarantee of Availability</h3>
+            <p>We do not guarantee that shared content will always be available. Share links may expire, and we reserve the right to remove shared content that violates these Terms.</p>
+
+            <h3>Imported Content</h3>
+            <p>When you import content shared by others:</p>
+            <ul>
+                <li>You are responsible for how you use that content</li>
+                <li>The original creator retains their rights to the content</li>
+                <li>You should respect any attribution or usage preferences indicated by the creator</li>
+            </ul>
+        </section>
+
+        <section id="intellectual-property">
+            <h2><span class="icon">©️</span> 7. Intellectual Property</h2>
+
+            <h3>Our Intellectual Property</h3>
+            <p>The App, including its design, features, code, graphics, user interface, and all related intellectual property, is owned by Florian Thess and is protected by copyright, trademark, and other intellectual property laws.</p>
+            <p>You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
+
+            <h3>Restrictions</h3>
+            <p>You may not:</p>
+            <ul>
+                <li>Copy, modify, or distribute the App or any part thereof</li>
+                <li>Reverse engineer, decompile, or disassemble the App</li>
+                <li>Remove or alter any proprietary notices or labels</li>
+                <li>Use the App for any commercial purpose without our written consent</li>
+                <li>Create derivative works based on the App</li>
+                <li>Use automated systems to access the App or extract data</li>
+            </ul>
+
+            <h3>Trademarks</h3>
+            <p>"Chef's Pages" and associated logos are trademarks of Florian Thess. You may not use these trademarks without prior written permission.</p>
+
+            <h3>Feedback</h3>
+            <p>If you provide feedback, suggestions, or ideas about the App, you grant us a perpetual, irrevocable, royalty-free license to use such feedback for any purpose without compensation to you.</p>
+        </section>
+
+        <section id="acceptable-use">
+            <h2><span class="icon">✅</span> 8. Acceptable Use Policy</h2>
+            <p>You agree to use Chef's Pages only for lawful purposes and in accordance with these Terms. You agree NOT to:</p>
+
+            <h3>Prohibited Content</h3>
+            <ul>
+                <li>Share content that is illegal, harmful, threatening, abusive, harassing, defamatory, or otherwise objectionable</li>
+                <li>Share content that infringes any patent, trademark, copyright, or other proprietary rights</li>
+                <li>Share content that contains malware, viruses, or harmful code</li>
+                <li>Share recipes or content that promotes dangerous activities or substances</li>
+                <li>Share misleading or fraudulent content</li>
+                <li>Share content that violates any person's privacy rights</li>
+            </ul>
+
+            <h3>Prohibited Activities</h3>
+            <ul>
+                <li>Use the App in any way that could damage, disable, or impair our services</li>
+                <li>Attempt to gain unauthorized access to any part of the App or its systems</li>
+                <li>Use the App to transmit spam or unsolicited communications</li>
+                <li>Impersonate any person or entity</li>
+                <li>Interfere with other users' enjoyment of the App</li>
+                <li>Use the App for any commercial purpose without authorization</li>
+                <li>Scrape, crawl, or use automated means to access the App</li>
+            </ul>
+
+            <h3>Enforcement</h3>
+            <p>We reserve the right to remove any content and terminate or suspend access for users who violate this Acceptable Use Policy, at our sole discretion and without prior notice.</p>
+        </section>
+
+        <section id="third-party">
+            <h2><span class="icon">🔌</span> 9. Third-Party Services</h2>
+            <p>Chef's Pages integrates with or provides links to third-party services:</p>
+
+            <h3>Apple Services</h3>
+            <ul>
+                <li><strong>iCloud:</strong> For data synchronization across your devices</li>
+                <li><strong>Apple Watch:</strong> For timer synchronization</li>
+                <li><strong>App Store:</strong> For app distribution and in-app purchases (if any)</li>
+            </ul>
+            <p>Your use of Apple services is governed by Apple's terms and conditions.</p>
+
+            <h3>Cloudflare</h3>
+            <p>Our sharing service is hosted on Cloudflare's infrastructure. Cloudflare's services are governed by their own terms and privacy policies.</p>
+
+            <h3>ChatGPT Integration</h3>
+            <p>The App provides optional links to ChatGPT-based tools for photography assistance. Any use of ChatGPT is governed by OpenAI's terms of service. We do not control and are not responsible for ChatGPT's functionality or outputs.</p>
+
+            <h3>Disclaimer</h3>
+            <p>We are not responsible for the availability, accuracy, or content of third-party services. Your use of third-party services is at your own risk and subject to their respective terms and conditions.</p>
+        </section>
+
+        <section id="app-store">
+            <h2><span class="icon">🍎</span> 10. App Store Terms</h2>
+            <p>You acknowledge and agree that:</p>
+            <ul>
+                <li>These Terms are between you and Florian Thess, not Apple Inc.</li>
+                <li>Florian Thess, not Apple, is solely responsible for the App and its content</li>
+                <li>Apple has no obligation to provide maintenance or support services for the App</li>
+                <li>In the event of any failure of the App to conform to applicable warranties, you may notify Apple for a refund of the purchase price (if any); Apple has no other warranty obligation</li>
+                <li>Florian Thess, not Apple, is responsible for addressing any claims relating to the App</li>
+                <li>Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you</li>
+            </ul>
+            <p>Your use of the App must comply with the App Store Terms of Service.</p>
+        </section>
+
+        <section id="disclaimers">
+            <h2><span class="icon">⚠️</span> 11. Disclaimers</h2>
+
+            <div class="warning-box">
+                <p><strong>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</strong></p>
+            </div>
+
+            <h3>No Warranty</h3>
+            <p>To the fullest extent permitted by applicable law, we disclaim all warranties, express or implied, including but not limited to:</p>
+            <ul>
+                <li>Implied warranties of merchantability and fitness for a particular purpose</li>
+                <li>Warranties of non-infringement</li>
+                <li>Warranties that the App will be uninterrupted, error-free, or secure</li>
+                <li>Warranties regarding the accuracy or reliability of any content</li>
+            </ul>
+
+            <h3>Recipe and Food Safety Disclaimer</h3>
+            <p><strong>Important:</strong> Recipes and cooking information in the App (whether created by you or imported from others) are for informational purposes only. We do not guarantee the safety, accuracy, or suitability of any recipe. You are solely responsible for:</p>
+            <ul>
+                <li>Ensuring food safety and proper cooking temperatures</li>
+                <li>Identifying and avoiding allergens</li>
+                <li>Verifying ingredient measurements and cooking instructions</li>
+                <li>Making appropriate substitutions for dietary restrictions</li>
+            </ul>
+
+            <h3>Wine Information Disclaimer</h3>
+            <p>Wine information, including AI-generated tasting predictions, is for informational and entertainment purposes only. We make no claims about the accuracy of wine profiles, pairing suggestions, or other wine-related content. Always drink responsibly and in accordance with local laws.</p>
+
+            <h3>AI-Generated Content Disclaimer</h3>
+            <div class="warning-box">
+                <p><strong>AI features are provided for guidance and convenience only. AI can and will make mistakes. Always verify AI-generated content before relying on it.</strong></p>
+            </div>
+            <p>Chef's Pages includes various AI-powered features, including:</p>
+            <ul>
+                <li>Voice-to-recipe transcription</li>
+                <li>Wine profile predictions (sweetness, acidity, body, tannin levels)</li>
+                <li>Recipe generation and improvement suggestions</li>
+                <li>Ingredient parsing and organization</li>
+            </ul>
+            <p><strong>Important limitations you must understand:</strong></p>
+            <ul>
+                <li><strong>AI is not infallible:</strong> Artificial intelligence systems, including those used in Chef's Pages, can produce inaccurate, incomplete, or inappropriate outputs</li>
+                <li><strong>Guidance, not truth:</strong> AI-generated content should be treated as suggestions or starting points, not as authoritative or verified information</li>
+                <li><strong>No guarantee of accuracy:</strong> We make no representations or warranties regarding the accuracy, reliability, or completeness of any AI-generated content</li>
+                <li><strong>Human review required:</strong> You should always review, verify, and edit AI-generated content before using it, especially for recipes involving food safety, allergens, or dietary requirements</li>
+                <li><strong>Wine predictions are estimates:</strong> AI-predicted wine profiles are statistical estimates based on grape varietals and regions; actual wines may vary significantly from predictions</li>
+                <li><strong>Voice transcription errors:</strong> Speech-to-text conversion may mishear or misinterpret your words; always proofread transcribed recipes</li>
+            </ul>
+            <p><strong>You acknowledge and agree that:</strong></p>
+            <ul>
+                <li>You will not rely solely on AI-generated content for decisions affecting health, safety, or significant outcomes</li>
+                <li>You are solely responsible for verifying and validating any AI-generated content before use</li>
+                <li>We are not liable for any damages, injuries, or losses resulting from reliance on AI-generated content</li>
+                <li>AI features may be modified, improved, or discontinued at any time</li>
+            </ul>
+        </section>
+
+        <section id="limitation">
+            <h2><span class="icon">🛡️</span> 12. Limitation of Liability</h2>
+
+            <div class="warning-box">
+                <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, FLORIAN THESS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.</strong></p>
+            </div>
+
+            <p>This limitation applies to damages arising from:</p>
+            <ul>
+                <li>Your use or inability to use the App</li>
+                <li>Any content obtained from or through the App</li>
+                <li>Unauthorized access to or alteration of your data</li>
+                <li>Loss of data, profits, or goodwill</li>
+                <li>Any other matter relating to the App</li>
+            </ul>
+
+            <h3>Maximum Liability</h3>
+            <p>In no event shall our total liability to you for all claims arising from or relating to the App exceed the amount you paid for the App in the twelve (12) months preceding the claim, or fifty euros (€50), whichever is greater.</p>
+
+            <h3>Exceptions</h3>
+            <p>Some jurisdictions do not allow the exclusion or limitation of certain warranties or liabilities. In such jurisdictions, our liability shall be limited to the maximum extent permitted by law.</p>
+        </section>
+
+        <section id="indemnification">
+            <h2><span class="icon">🔒</span> 13. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless Florian Thess and any affiliates, officers, agents, and employees from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:</p>
+            <ul>
+                <li>Your use of the App</li>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of any rights of another party</li>
+                <li>Your User Content</li>
+                <li>Any claim that your User Content caused damage to a third party</li>
+            </ul>
+        </section>
+
+        <section id="termination">
+            <h2><span class="icon">🚪</span> 14. Termination</h2>
+
+            <h3>Termination by You</h3>
+            <p>You may stop using the App at any time by:</p>
+            <ul>
+                <li>Deleting the App from your device(s)</li>
+                <li>Deleting your data from iCloud (if applicable)</li>
+                <li>Requesting removal of any shared content</li>
+            </ul>
+
+            <h3>Termination by Us</h3>
+            <p>We may terminate or suspend your access to the App immediately, without prior notice, for any reason, including but not limited to:</p>
+            <ul>
+                <li>Violation of these Terms</li>
+                <li>Conduct that we determine is harmful to other users or the App</li>
+                <li>Request by law enforcement or government agencies</li>
+                <li>Discontinuation of the App or any part thereof</li>
+            </ul>
+
+            <h3>Effect of Termination</h3>
+            <p>Upon termination:</p>
+            <ul>
+                <li>Your license to use the App is immediately revoked</li>
+                <li>You must cease all use of the App</li>
+                <li>Provisions that by their nature should survive termination shall survive (including ownership, disclaimers, limitation of liability, and dispute resolution)</li>
+            </ul>
+        </section>
+
+        <section id="changes">
+            <h2><span class="icon">📝</span> 15. Changes to Terms</h2>
+            <p>We reserve the right to modify these Terms at any time. When we make changes:</p>
+            <ul>
+                <li>We will update the "Effective Date" at the top of these Terms</li>
+                <li>We may notify you through the App or via App Store update notes</li>
+                <li>Material changes will be highlighted where practical</li>
+            </ul>
+            <p>Your continued use of the App after any changes constitutes your acceptance of the new Terms. If you do not agree to the modified Terms, you must stop using the App.</p>
+            <p>We encourage you to review these Terms periodically to stay informed of any updates.</p>
+        </section>
+
+        <section id="governing-law">
+            <h2><span class="icon">⚖️</span> 16. Governing Law and Disputes</h2>
+
+            <h3>Governing Law</h3>
+            <p>These Terms shall be governed by and construed in accordance with the laws of Germany, without regard to its conflict of law provisions.</p>
+
+            <h3>Dispute Resolution</h3>
+            <p>In the event of any dispute arising from or relating to these Terms or your use of the App:</p>
+            <ol>
+                <li><strong>Informal Resolution:</strong> We encourage you to contact us first at <a href="mailto:hello@florianthess.com">hello@florianthess.com</a> to attempt to resolve the dispute informally.</li>
+                <li><strong>Mediation:</strong> If informal resolution fails, either party may propose mediation before pursuing other remedies.</li>
+                <li><strong>Jurisdiction:</strong> Any legal proceedings shall be brought exclusively in the courts of Germany.</li>
+            </ol>
+
+            <h3>EU Consumer Rights</h3>
+            <p>If you are a consumer in the European Union, you may also have the right to submit disputes to the Online Dispute Resolution platform provided by the European Commission at <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a>.</p>
+
+            <h3>Class Action Waiver</h3>
+            <p>To the extent permitted by applicable law, you agree that any dispute resolution proceedings will be conducted only on an individual basis and not in a class, consolidated, or representative action.</p>
+        </section>
+
+        <section id="severability">
+            <h2><span class="icon">📋</span> 17. Severability</h2>
+            <p>If any provision of these Terms is found to be unenforceable or invalid by a court of competent jurisdiction:</p>
+            <ul>
+                <li>That provision shall be enforced to the maximum extent permissible</li>
+                <li>The remaining provisions of these Terms shall remain in full force and effect</li>
+                <li>The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable</li>
+            </ul>
+
+            <h3>Entire Agreement</h3>
+            <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Florian Thess regarding the App and supersede all prior agreements and understandings.</p>
+
+            <h3>Waiver</h3>
+            <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision.</p>
+
+            <h3>Assignment</h3>
+            <p>You may not assign or transfer these Terms or your rights hereunder without our prior written consent. We may assign our rights and obligations under these Terms without restriction.</p>
+        </section>
+
+        <section id="contact">
+            <h2><span class="icon">📧</span> 18. Contact Information</h2>
+            <p>If you have any questions, concerns, or feedback regarding these Terms and Conditions, please contact us:</p>
+
+            <div class="contact-info">
+                <p><strong>Florian Thess</strong></p>
+                <p>Operating as: Chef's Pages</p>
+                <p>Email: <a href="mailto:hello@florianthess.com">hello@florianthess.com</a></p>
+                <p>Website: <a href="https://chefs-pages.com" target="_blank" rel="noopener">chefs-pages.com</a></p>
+            </div>
+
+            <p style="margin-top: 20px;">We will make reasonable efforts to respond to your inquiries in a timely manner.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Chef's Pages. All rights reserved.</p>
+            <p>These Terms and Conditions were last updated on February 3, 2026.</p>
+        </footer>
+    </div>
+</body>
+</html>

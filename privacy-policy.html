@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Chef's Pages</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --background-color: #fafafa;
+            --card-background: #ffffff;
+            --text-color: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #ecf0f1;
+                --accent-color: #e74c3c;
+                --background-color: #1a1a1a;
+                --card-background: #2d2d2d;
+                --text-color: #e0e0e0;
+                --text-secondary: #a0a0a0;
+                --border-color: #404040;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--accent-color), #c0392b);
+            border-radius: 18px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .effective-date {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--card-background);
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        section {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 .icon {
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            margin: 25px 0 12px 0;
+            font-weight: 600;
+        }
+
+        h3:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(192, 57, 43, 0.05));
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table th {
+            background-color: var(--background-color);
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .badge-local {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        .badge-cloud {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .badge-optional {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        .contact-info {
+            background-color: var(--background-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .toc {
+            background-color: var(--background-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .toc ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .data-table {
+                font-size: 0.85rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">📖</div>
+            <h1>Chef's Pages</h1>
+            <p class="subtitle">Privacy Policy</p>
+            <p class="effective-date">Effective Date: February 3, 2026</p>
+        </header>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#data-controller">Data Controller</a></li>
+                <li><a href="#data-collection">Information We Collect</a></li>
+                <li><a href="#legal-basis">Legal Basis for Processing</a></li>
+                <li><a href="#data-storage">How Your Data is Stored</a></li>
+                <li><a href="#data-usage">How We Use Your Information</a></li>
+                <li><a href="#data-sharing">Information Sharing</a></li>
+                <li><a href="#international-transfers">International Data Transfers</a></li>
+                <li><a href="#third-party">Third-Party Services</a></li>
+                <li><a href="#permissions">Device Permissions</a></li>
+                <li><a href="#on-device-ml">On-Device Processing</a></li>
+                <li><a href="#data-retention">Data Retention</a></li>
+                <li><a href="#gdpr-rights">Your Rights (GDPR - European Users)</a></li>
+                <li><a href="#ccpa-rights">Your Rights (CCPA - California Residents)</a></li>
+                <li><a href="#us-state-rights">Your Rights (Other US States)</a></li>
+                <li><a href="#age-restriction">Age Restriction</a></li>
+                <li><a href="#security">Data Security</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ol>
+        </div>
+
+        <section id="introduction">
+            <h2><span class="icon">👋</span> Introduction</h2>
+            <p>Welcome to Chef's Pages ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you have a positive experience when using our recipe management and meal planning application.</p>
+            <p>This Privacy Policy explains what information we collect, how we use it, and your rights regarding your personal data. Chef's Pages is designed with privacy in mind—your recipes, wines, and collections are yours, and we believe in minimal data collection.</p>
+            <div class="highlight-box">
+                <p><strong>Our Privacy Commitment:</strong> Chef's Pages is built to work primarily on your device. We do not use analytics or tracking services, and we only transmit your data when you explicitly choose to share content with others.</p>
+            </div>
+            <p><strong>Age Requirement:</strong> Chef's Pages is intended for users aged 18 and older due to wine cellar and alcohol-related features. By using this app, you confirm that you are at least 18 years of age.</p>
+        </section>
+
+        <section id="data-controller">
+            <h2><span class="icon">🏢</span> Data Controller</h2>
+            <p>The data controller responsible for your personal data is:</p>
+            <div class="contact-info">
+                <p><strong>Florian Thess</strong></p>
+                <p>Operating as: Chef's Pages</p>
+                <p>Email: <a href="mailto:hello@florianthess.com">hello@florianthess.com</a></p>
+            </div>
+            <p style="margin-top: 15px;">As the data controller, Florian Thess determines the purposes and means of processing your personal data in connection with Chef's Pages.</p>
+        </section>
+
+        <section id="data-collection">
+            <h2><span class="icon">📋</span> Information We Collect</h2>
+
+            <h3>Content You Create</h3>
+            <p>When you use Chef's Pages, you may create and store the following types of content:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Details</th>
+                        <th>Storage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Recipes</strong></td>
+                        <td>Title, description, ingredients, cooking instructions, chef's tips, prep/cook times, servings, difficulty level, category, images, theme colors</td>
+                        <td><span class="badge badge-local">Local</span> <span class="badge badge-cloud">iCloud</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wines</strong></td>
+                        <td>Name, varietal, region, country, vintage year, tasting notes, alcohol percentage, rating, pairing suggestions, quantity, cellar location, purchase info, images</td>
+                        <td><span class="badge badge-local">Local</span> <span class="badge badge-cloud">iCloud</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Collections</strong></td>
+                        <td>Title, description, theme colors, creator name, recipe memberships</td>
+                        <td><span class="badge badge-local">Local</span> <span class="badge badge-cloud">iCloud</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Shopping Lists</strong></td>
+                        <td>Item text, checked status, source recipe</td>
+                        <td><span class="badge badge-local">Local</span> <span class="badge badge-cloud">iCloud</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Menu Plans</strong></td>
+                        <td>Date, linked recipe and wine, notes</td>
+                        <td><span class="badge badge-local">Local</span> <span class="badge badge-cloud">iCloud</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cooking Timers</strong></td>
+                        <td>Duration, elapsed time, associated recipe step</td>
+                        <td><span class="badge badge-local">Local</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>User Identity Information</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Purpose</th>
+                        <th>Storage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Anonymous User ID</strong></td>
+                        <td>A randomly generated identifier (UUID) used to associate shared content with your device. This ID contains no personal information.</td>
+                        <td><span class="badge badge-local">Keychain</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Display Name</strong></td>
+                        <td>An optional name you choose to identify yourself when sharing content with others.</td>
+                        <td><span class="badge badge-optional">Optional</span> <span class="badge badge-local">Local</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Preferences and Settings</h3>
+            <ul>
+                <li>Default serving sizes</li>
+                <li>Measurement system preference (metric or imperial)</li>
+                <li>App display preferences</li>
+            </ul>
+
+            <h3>Information We Do NOT Collect</h3>
+            <p>Chef's Pages does not collect:</p>
+            <ul>
+                <li>Your name, email address, or phone number (unless you choose to provide a display name)</li>
+                <li>Location data</li>
+                <li>Usage analytics or behavioral data</li>
+                <li>Device identifiers for advertising</li>
+                <li>Health or fitness information</li>
+                <li>Contacts or address book data</li>
+                <li>Financial or payment information</li>
+            </ul>
+        </section>
+
+        <section id="legal-basis">
+            <h2><span class="icon">⚖️</span> Legal Basis for Processing (GDPR)</h2>
+            <p>Under the General Data Protection Regulation (GDPR), we must have a valid legal basis for processing your personal data. The following table explains our legal basis for each processing activity:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Processing Activity</th>
+                        <th>Legal Basis</th>
+                        <th>Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Core app functionality</strong><br>(storing recipes, wines, collections locally)</td>
+                        <td>Contract Performance<br>(Art. 6(1)(b) GDPR)</td>
+                        <td>Necessary to provide the service you requested when downloading and using the app</td>
+                    </tr>
+                    <tr>
+                        <td><strong>iCloud synchronization</strong></td>
+                        <td>Contract Performance<br>(Art. 6(1)(b) GDPR)</td>
+                        <td>Necessary to provide cross-device sync functionality as part of the app's core features</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Content sharing</strong><br>(uploading to share.chefs-pages.com)</td>
+                        <td>Consent<br>(Art. 6(1)(a) GDPR)</td>
+                        <td>You explicitly choose to share content; sharing is entirely optional and user-initiated</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anonymous user ID generation</strong></td>
+                        <td>Legitimate Interest<br>(Art. 6(1)(f) GDPR)</td>
+                        <td>Necessary to associate shared content with users without collecting personal information; minimal privacy impact</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Display name storage</strong></td>
+                        <td>Consent<br>(Art. 6(1)(a) GDPR)</td>
+                        <td>You voluntarily provide a display name; this is entirely optional</td>
+                    </tr>
+                    <tr>
+                        <td><strong>On-device ML processing</strong><br>(wine predictions, voice transcription)</td>
+                        <td>Contract Performance<br>(Art. 6(1)(b) GDPR)</td>
+                        <td>Necessary to provide app features; all processing is local with no data transmission</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Camera/microphone access</strong></td>
+                        <td>Consent<br>(Art. 6(1)(a) GDPR)</td>
+                        <td>You grant permission through iOS system prompts; can be revoked anytime</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Withdrawing Consent</h3>
+            <p>Where we rely on your consent as the legal basis for processing, you have the right to withdraw that consent at any time. You can do this by:</p>
+            <ul>
+                <li><strong>Sharing:</strong> Simply do not use the share feature; delete previously shared content by contacting us</li>
+                <li><strong>Display Name:</strong> Remove your display name in app settings</li>
+                <li><strong>Permissions:</strong> Revoke camera, microphone, or other permissions in iOS Settings</li>
+            </ul>
+            <p>Withdrawing consent does not affect the lawfulness of processing carried out before the withdrawal.</p>
+        </section>
+
+        <section id="data-storage">
+            <h2><span class="icon">💾</span> How Your Data is Stored</h2>
+
+            <h3>Local Storage</h3>
+            <p>All your recipes, wines, collections, and other content are stored locally on your device in a secure database. This data remains on your device and is protected by your device's built-in security features (passcode, Face ID, Touch ID).</p>
+
+            <h3>iCloud Sync</h3>
+            <p>If you have iCloud enabled for Chef's Pages, your data will sync across your Apple devices using Apple's CloudKit service. This data is stored in your <strong>private iCloud container</strong>, meaning:</p>
+            <ul>
+                <li>Only you can access this data through your Apple ID</li>
+                <li>The data is encrypted in transit and at rest</li>
+                <li>We cannot access your synced data</li>
+                <li>Apple's privacy policies govern iCloud data storage</li>
+            </ul>
+
+            <h3>Keychain Storage</h3>
+            <p>Your anonymous user ID is stored securely in iOS Keychain, Apple's secure storage system for sensitive information. This ensures the ID persists across app reinstalls while remaining protected.</p>
+
+            <h3>Automatic Backups</h3>
+            <p>Chef's Pages creates automatic local backups of your data to protect against data loss. These backups are stored on your device and follow a retention policy that keeps the most recent backups.</p>
+        </section>
+
+        <section id="data-usage">
+            <h2><span class="icon">⚙️</span> How We Use Your Information</h2>
+            <p>We use your information solely to provide and improve the Chef's Pages experience:</p>
+            <ul>
+                <li><strong>Core Functionality:</strong> To store and display your recipes, wines, collections, shopping lists, and menu plans</li>
+                <li><strong>Cross-Device Sync:</strong> To synchronize your content across your Apple devices via iCloud</li>
+                <li><strong>Apple Watch Integration:</strong> To sync cooking timers between your iPhone and Apple Watch</li>
+                <li><strong>Content Sharing:</strong> To enable you to share recipes, wines, and collections with others when you choose to do so</li>
+                <li><strong>On-Device Features:</strong> To provide wine profile predictions and voice-to-recipe transcription using on-device machine learning</li>
+            </ul>
+            <div class="highlight-box">
+                <p><strong>No Advertising:</strong> We do not use your data for advertising purposes. We do not sell, rent, or trade your personal information to third parties.</p>
+            </div>
+        </section>
+
+        <section id="data-sharing">
+            <h2><span class="icon">🔗</span> Information Sharing</h2>
+
+            <h3>When You Choose to Share</h3>
+            <p>Chef's Pages includes features that allow you to share recipes, wines, and collections with others. When you explicitly choose to share content:</p>
+            <ul>
+                <li>The shared content (recipe details, wine information, or collection data) is uploaded to our sharing service</li>
+                <li>Your anonymous user ID is associated with the shared content</li>
+                <li>Your display name (if you've set one) may be visible to recipients</li>
+                <li>A shareable link is generated that others can use to view and import your content</li>
+            </ul>
+
+            <h3>Discover Feature</h3>
+            <p>The Discover feature allows you to browse content that other users have chosen to make publicly available. Content you share may appear in:</p>
+            <ul>
+                <li>Featured content sections</li>
+                <li>Recently published content</li>
+                <li>Popular content listings</li>
+            </ul>
+
+            <h3>Export Features</h3>
+            <p>You can export your recipes as CPD files (our custom format) to share via email, messaging apps, or file sharing services. This export happens locally on your device, and you control where the exported file is sent.</p>
+
+            <h3>Information We Never Share</h3>
+            <ul>
+                <li>Content you haven't explicitly chosen to share</li>
+                <li>Your shopping lists or menu plans</li>
+                <li>Your preferences or settings</li>
+                <li>Any data for advertising or marketing purposes</li>
+            </ul>
+        </section>
+
+        <section id="international-transfers">
+            <h2><span class="icon">🌍</span> International Data Transfers</h2>
+            <p>Chef's Pages may transfer your personal data outside your country of residence in the following circumstances:</p>
+
+            <h3>Cloudflare Infrastructure</h3>
+            <p>Our sharing service (share.chefs-pages.com) is hosted on <strong>Cloudflare's global infrastructure</strong>. Cloudflare operates data centers worldwide, which means shared content may be processed in various locations, including the United States.</p>
+
+            <h4>Safeguards for EU/EEA Users</h4>
+            <p>For transfers of personal data from the European Economic Area (EEA), United Kingdom, or Switzerland to countries without an adequacy decision, we rely on the following safeguards:</p>
+            <ul>
+                <li><strong>EU-U.S. Data Privacy Framework:</strong> Cloudflare is certified under the EU-U.S. Data Privacy Framework, the UK Extension, and the Swiss-U.S. Data Privacy Framework</li>
+                <li><strong>Standard Contractual Clauses (SCCs):</strong> Cloudflare incorporates the European Commission's Standard Contractual Clauses into their data processing agreements</li>
+                <li><strong>Supplementary Measures:</strong> Cloudflare implements additional technical and organizational measures including encryption in transit and at rest</li>
+            </ul>
+            <p>For more information about Cloudflare's privacy practices, visit <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a>.</p>
+
+            <h3>Apple iCloud</h3>
+            <p>If you use iCloud sync, your data is processed by Apple Inc. in accordance with Apple's privacy practices. Apple stores iCloud data in data centers located in various countries. Apple complies with applicable data protection laws and has implemented appropriate safeguards for international transfers. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> for details.</p>
+
+            <h3>Data Minimization</h3>
+            <p>We minimize international data transfers by:</p>
+            <ul>
+                <li>Processing most data locally on your device</li>
+                <li>Only transferring data when you explicitly choose to share content</li>
+                <li>Not using any analytics services that would require data transfers</li>
+            </ul>
+        </section>
+
+        <section id="third-party">
+            <h2><span class="icon">🌐</span> Third-Party Services</h2>
+
+            <h3>Apple Services</h3>
+            <p>Chef's Pages integrates with the following Apple services:</p>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Data Involved</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>iCloud (CloudKit)</strong></td>
+                        <td>Sync your content across devices</td>
+                        <td>All your recipes, wines, collections, shopping lists, menu plans</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Watch Connectivity</strong></td>
+                        <td>Sync timers with Apple Watch</td>
+                        <td>Active cooking timers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AlarmKit</strong></td>
+                        <td>Timer notifications</td>
+                        <td>Timer duration and completion alerts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Speech Recognition</strong></td>
+                        <td>Voice-to-recipe transcription</td>
+                        <td>Voice input (processed on-device)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Apple's use of this data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+
+            <h3>Chef's Pages Sharing Service</h3>
+            <p>Our sharing service (share.chefs-pages.com) handles the sharing and discovery features. When you share content:</p>
+            <ul>
+                <li>Your shared content is stored on our servers</li>
+                <li>Your anonymous user ID and display name are associated with shared content</li>
+                <li>Shared content may be accessed by anyone with the share link</li>
+            </ul>
+
+            <h3>ChatGPT Integration (Optional)</h3>
+            <p>Chef's Pages provides convenient links to ChatGPT-based tools for recipe and wine photography assistance. Important notes about this integration:</p>
+            <ul>
+                <li>This feature is entirely optional and user-initiated</li>
+                <li>Chef's Pages does <strong>not</strong> automatically send any data to OpenAI/ChatGPT</li>
+                <li>You must manually upload images or content to ChatGPT's web interface</li>
+                <li>Any data you share with ChatGPT is governed by <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI's Privacy Policy</a></li>
+            </ul>
+
+            <h3>No Analytics or Tracking</h3>
+            <p>Chef's Pages does <strong>not</strong> use any third-party analytics, crash reporting, or tracking services such as:</p>
+            <ul>
+                <li>Google Analytics</li>
+                <li>Firebase</li>
+                <li>Mixpanel</li>
+                <li>Segment</li>
+                <li>Sentry</li>
+                <li>Any advertising SDKs</li>
+            </ul>
+        </section>
+
+        <section id="permissions">
+            <h2><span class="icon">🔐</span> Device Permissions</h2>
+            <p>Chef's Pages may request the following device permissions. Each permission is optional, and you can use most features without granting all permissions:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Purpose</th>
+                        <th>When Requested</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Camera</strong></td>
+                        <td>Capture photos of recipes, wines, and scan barcodes</td>
+                        <td>When you tap to take a photo or scan</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Microphone</strong></td>
+                        <td>Record voice input for voice-to-recipe transcription</td>
+                        <td>When you use voice input features</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Photo Library (Write)</strong></td>
+                        <td>Save recipe images to your photo library for sharing</td>
+                        <td>When you choose to save an image</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alarms</strong></td>
+                        <td>Notify you when cooking timers complete, even in background</td>
+                        <td>When you create a cooking timer</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Notifications</strong></td>
+                        <td>Background sync notifications and timer alerts</td>
+                        <td>When enabling iCloud sync or timers</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>You can manage these permissions at any time in your device's Settings app under Chef's Pages.</p>
+        </section>
+
+        <section id="on-device-ml">
+            <h2><span class="icon">🤖</span> On-Device Processing</h2>
+            <p>Chef's Pages uses machine learning to enhance your experience. Importantly, <strong>all machine learning processing happens entirely on your device</strong>:</p>
+
+            <h3>Wine Profile Prediction</h3>
+            <p>Our CoreML models analyze wine characteristics (varietal, region, etc.) to predict tasting profiles (sweetness, acidity, body, tannin levels). This processing:</p>
+            <ul>
+                <li>Happens entirely on your iPhone or iPad</li>
+                <li>Does not send any data to external servers</li>
+                <li>Uses models stored within the app</li>
+            </ul>
+
+            <h3>Voice-to-Recipe Transcription</h3>
+            <p>Using Apple's on-device speech recognition and language models, you can dictate recipes using your voice. This feature:</p>
+            <ul>
+                <li>Processes your voice entirely on-device</li>
+                <li>Does not transmit audio to any external service</li>
+                <li>Requires iOS 18.2 or later for full functionality</li>
+            </ul>
+
+            <h3>Recipe Generation and Improvement</h3>
+            <p>On-device language models can help generate and improve recipes. All processing occurs locally on your device with no external API calls.</p>
+
+            <h3>AI Accuracy Notice</h3>
+            <div class="highlight-box">
+                <p><strong>Important:</strong> AI-powered features are provided for guidance and convenience only. AI systems can and do make mistakes. All AI-generated content—including wine predictions, transcribed recipes, and recipe suggestions—should be treated as helpful starting points, not as verified or authoritative information.</p>
+                <p>Always review and verify AI outputs before use, especially for food safety, allergens, and dietary requirements. For complete terms regarding AI limitations, please see our <a href="terms-and-conditions.html">Terms and Conditions</a>.</p>
+            </div>
+        </section>
+
+        <section id="data-retention">
+            <h2><span class="icon">🗄️</span> Data Retention</h2>
+
+            <h3>Local Data</h3>
+            <p>Your recipes, wines, collections, and other content remain on your device until you delete them or uninstall the app. Automatic backups follow a retention policy that maintains the five most recent backups.</p>
+
+            <h3>iCloud Data</h3>
+            <p>Data synced to iCloud remains in your iCloud account until you delete it from the app or directly from iCloud. Deleting content in Chef's Pages removes it from your CloudKit container.</p>
+
+            <h3>Shared Content</h3>
+            <p>Content you share via our sharing service may remain available until you request its removal. Share links may expire based on our retention policies.</p>
+
+            <h3>Anonymous User ID</h3>
+            <p>Your anonymous user ID persists in Keychain until you reset your device or clear Keychain data. This ID is not personally identifiable.</p>
+        </section>
+
+        <section id="gdpr-rights">
+            <h2><span class="icon">🇪🇺</span> Your Rights (GDPR - European Users)</h2>
+            <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have the following rights under the General Data Protection Regulation (GDPR):</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Right</th>
+                        <th>Description</th>
+                        <th>How to Exercise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Right of Access</strong><br>(Art. 15)</td>
+                        <td>Obtain confirmation of whether we process your data and receive a copy of that data</td>
+                        <td>Contact us via email; view your data directly in the app</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Right to Rectification</strong><br>(Art. 16)</td>
+                        <td>Correct inaccurate personal data or complete incomplete data</td>
+                        <td>Edit your data directly in the app, or contact us</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Right to Erasure</strong><br>(Art. 17)</td>
+                        <td>Request deletion of your personal data ("right to be forgotten")</td>
+                        <td>Delete data in the app; contact us for shared content removal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Right to Restrict Processing</strong><br>(Art. 18)</td>
+                        <td>Request limitation of processing in certain circumstances</td>
+                        <td>Contact us via email</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Right to Data Portability</strong><br>(Art. 20)</td>
+                        <td>Receive your data in a structured, machine-readable format</td>
+                        <td>Export recipes as CPD files; contact us for additional data</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Right to Object</strong><br>(Art. 21)</td>
+                        <td>Object to processing based on legitimate interests</td>
+                        <td>Contact us via email</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Right to Withdraw Consent</strong><br>(Art. 7(3))</td>
+                        <td>Withdraw consent at any time where processing is based on consent</td>
+                        <td>Revoke permissions in iOS Settings; remove display name; contact us</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Response Timeframe</h3>
+            <p>We will respond to your request <strong>within 30 days</strong> of receiving it. If your request is complex or we receive many requests, we may extend this period by up to two additional months, but we will inform you of any extension within the first 30 days.</p>
+
+            <h3>Verification</h3>
+            <p>To protect your privacy, we may need to verify your identity before fulfilling your request. We may ask you to provide information that matches data we have on file or confirm details about your shared content.</p>
+
+            <h3>Right to Lodge a Complaint</h3>
+            <p>If you believe we have not handled your data in accordance with applicable law, you have the right to lodge a complaint with a supervisory authority. You can contact the data protection authority in your country of residence, place of work, or where the alleged infringement occurred.</p>
+            <p>A list of EU data protection authorities can be found at: <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">European Data Protection Board - Members</a></p>
+
+            <h3>Automated Decision-Making</h3>
+            <p>Chef's Pages uses on-device machine learning for wine profile predictions and recipe assistance. These automated processes:</p>
+            <ul>
+                <li>Do <strong>not</strong> produce legal effects or similarly significantly affect you</li>
+                <li>Are used solely to enhance app functionality and user experience</li>
+                <li>Process data entirely on your device without transmission to external servers</li>
+            </ul>
+            <p>You are not subject to decisions based solely on automated processing that would have legal or similarly significant effects.</p>
+        </section>
+
+        <section id="ccpa-rights">
+            <h2><span class="icon">🇺🇸</span> Your Rights (CCPA/CPRA - California Residents)</h2>
+            <p>If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA):</p>
+
+            <h3>Categories of Personal Information</h3>
+            <p>In the preceding 12 months, we have collected the following categories of personal information:</p>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Collected</th>
+                        <th>Business Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Identifiers (anonymous user ID, display name)</td>
+                        <td>Yes</td>
+                        <td>Content attribution for sharing features</td>
+                    </tr>
+                    <tr>
+                        <td>Personal records (recipes, wines, collections you create)</td>
+                        <td>Yes</td>
+                        <td>Core app functionality</td>
+                    </tr>
+                    <tr>
+                        <td>Commercial information</td>
+                        <td>No</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Biometric information</td>
+                        <td>No</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Internet/network activity</td>
+                        <td>No</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Geolocation data</td>
+                        <td>No</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Sensory data (photos, voice)</td>
+                        <td>Yes*</td>
+                        <td>Recipe photos you create; voice input you provide (processed on-device only)</td>
+                    </tr>
+                    <tr>
+                        <td>Professional/employment info</td>
+                        <td>No</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Education information</td>
+                        <td>No</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Inferences</td>
+                        <td>Yes*</td>
+                        <td>Wine profile predictions (processed on-device only)</td>
+                    </tr>
+                    <tr>
+                        <td>Sensitive personal information</td>
+                        <td>No</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><em>*This data is processed locally on your device and is not transmitted to our servers unless you explicitly share content.</em></p>
+
+            <h3>Your California Privacy Rights</h3>
+            <ul>
+                <li><strong>Right to Know:</strong> Request information about what personal information we collect, use, disclose, and sell</li>
+                <li><strong>Right to Delete:</strong> Request deletion of your personal information, subject to certain exceptions</li>
+                <li><strong>Right to Correct:</strong> Request correction of inaccurate personal information</li>
+                <li><strong>Right to Opt-Out of Sale/Sharing:</strong> See below</li>
+                <li><strong>Right to Limit Use of Sensitive Personal Information:</strong> We do not collect sensitive personal information as defined by CPRA</li>
+                <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h4>Do Not Sell or Share My Personal Information</h4>
+                <p><strong>Chef's Pages does not sell your personal information.</strong> We do not sell, rent, or trade your personal data to third parties for monetary or other valuable consideration.</p>
+                <p><strong>Chef's Pages does not share your personal information for cross-context behavioral advertising.</strong> We do not use your data for targeted advertising purposes.</p>
+                <p>Because we do not sell or share personal information, there is no need to opt out. However, if you have questions or concerns, please contact us.</p>
+            </div>
+
+            <h3>How to Submit a Request</h3>
+            <p>You can submit a request by:</p>
+            <ul>
+                <li>Email: <a href="mailto:hello@florianthess.com">hello@florianthess.com</a></li>
+            </ul>
+
+            <h3>Verification Process</h3>
+            <p>To protect your privacy, we will verify your identity before processing your request. We may ask you to:</p>
+            <ul>
+                <li>Confirm your anonymous user ID (found in app settings)</li>
+                <li>Provide details about content you have shared</li>
+                <li>Answer questions about your account activity</li>
+            </ul>
+
+            <h3>Authorized Agents</h3>
+            <p>You may designate an authorized agent to submit requests on your behalf. To do so:</p>
+            <ul>
+                <li>Provide written authorization signed by you</li>
+                <li>Verify your identity directly with us</li>
+                <li>The agent must provide proof of authorization</li>
+            </ul>
+
+            <h3>Response Timeframe</h3>
+            <p>We will acknowledge your request within <strong>10 business days</strong> and respond within <strong>45 calendar days</strong>. If we need more time, we will inform you and may extend by up to 45 additional days.</p>
+
+            <h3>Financial Incentives</h3>
+            <p>Chef's Pages does not offer any financial incentives, price differences, or service differences in exchange for the retention or sale of personal information.</p>
+
+            <h3>Shine the Light (California Civil Code § 1798.83)</h3>
+            <p>California residents may request information about disclosure of personal information to third parties for direct marketing purposes. Chef's Pages does not disclose personal information to third parties for their direct marketing purposes.</p>
+        </section>
+
+        <section id="us-state-rights">
+            <h2><span class="icon">🏛️</span> Your Rights (Other US States)</h2>
+            <p>If you are a resident of Virginia, Colorado, Connecticut, Utah, or other US states with comprehensive privacy laws, you may have similar rights to those described above, including:</p>
+
+            <ul>
+                <li><strong>Right to Access:</strong> Know what personal data we have collected about you</li>
+                <li><strong>Right to Delete:</strong> Request deletion of your personal data</li>
+                <li><strong>Right to Correct:</strong> Request correction of inaccurate data</li>
+                <li><strong>Right to Data Portability:</strong> Obtain your data in a portable format</li>
+                <li><strong>Right to Opt-Out:</strong> Opt out of targeted advertising, sale of personal data, or profiling (note: we do not engage in these activities)</li>
+            </ul>
+
+            <h3>Global Privacy Control</h3>
+            <p>We respect the Global Privacy Control (GPC) signal. If your browser or device sends a GPC signal, we will treat it as a valid opt-out request for the sale or sharing of personal information. Since Chef's Pages does not sell or share personal information for advertising, no action is required on your part.</p>
+
+            <h3>Appeal Process</h3>
+            <p>If we deny your privacy request, you have the right to appeal. To appeal:</p>
+            <ol>
+                <li>Email us at <a href="mailto:hello@florianthess.com">hello@florianthess.com</a> with "Privacy Appeal" in the subject line</li>
+                <li>Include your original request and the reason for your appeal</li>
+                <li>We will respond within 60 days with our decision</li>
+            </ol>
+            <p>If your appeal is denied, you may contact your state's Attorney General to submit a complaint.</p>
+        </section>
+
+        <section id="age-restriction">
+            <h2><span class="icon">🔞</span> Age Restriction</h2>
+            <p><strong>Chef's Pages is intended for users aged 18 and older.</strong></p>
+            <p>Due to the wine cellar, alcohol tracking, and related features, this app is not suitable for minors. By using Chef's Pages, you confirm that you are at least 18 years of age.</p>
+            <p>We do not knowingly collect personal information from anyone under 18 years of age. If you are a parent or guardian and believe that someone under 18 has provided us with personal information through our sharing features, please contact us immediately at <a href="mailto:hello@florianthess.com">hello@florianthess.com</a> so we can take appropriate action to delete such information.</p>
+        </section>
+
+        <section id="security">
+            <h2><span class="icon">🛡️</span> Data Security</h2>
+            <p>We take the security of your data seriously:</p>
+            <ul>
+                <li><strong>Local Encryption:</strong> Your device's built-in security (passcode, Face ID, Touch ID) protects local data</li>
+                <li><strong>Keychain Security:</strong> Sensitive identifiers are stored in iOS Keychain with hardware-level protection</li>
+                <li><strong>iCloud Security:</strong> Data synced via CloudKit is encrypted in transit and at rest using Apple's security infrastructure</li>
+                <li><strong>HTTPS:</strong> All network communications use encrypted HTTPS connections</li>
+                <li><strong>Minimal Data Collection:</strong> We collect only what's necessary for the app to function</li>
+            </ul>
+            <p>While we implement reasonable security measures, no method of electronic storage or transmission is 100% secure. We encourage you to use device-level security features and keep your iOS updated.</p>
+        </section>
+
+        <section id="changes">
+            <h2><span class="icon">📝</span> Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. When we make significant changes:</p>
+            <ul>
+                <li>We will update the "Effective Date" at the top of this policy</li>
+                <li>We may notify you through the app or App Store update notes</li>
+                <li>Continued use of the app after changes constitutes acceptance of the updated policy</li>
+            </ul>
+            <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your data.</p>
+        </section>
+
+        <section id="contact">
+            <h2><span class="icon">📧</span> Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+
+            <div class="contact-info">
+                <p><strong>Chef's Pages</strong></p>
+                <p>Email: <a href="mailto:hello@florianthess.com">hello@florianthess.com</a></p>
+                <p>Website: <a href="https://chefs-pages.com" target="_blank" rel="noopener">chefs-pages.com</a></p>
+            </div>
+
+            <p style="margin-top: 20px;">We will respond to your inquiry within a reasonable timeframe and work to address your concerns.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Chef's Pages. All rights reserved.</p>
+            <p>This privacy policy was last updated on February 3, 2026.</p>
+        </footer>
+    </div>
+</body>
+</html>
